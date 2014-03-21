@@ -115,4 +115,9 @@ An block element represents a single prompt. Each of the different elements repr
 
 # Copyright and License
 
-&copy; 2014 Gowon Patterson, Gowon Designs Ltd. Co. AMML is licensed under GPL V3. This document is released under the Creative Commons license.
+Copyright &copy; 2014 Gowon Patterson, Gowon Designs Ltd. Co. 
+AMML is licensed under the terms of the [GNU General Public License Version 3][gpl-license].
+This document is licensed under the terms of the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc4-license].
+
+[gpl-license]: http://www.gnu.org/licenses/gpl-3.0.html
+[cc4-license]: http://creativecommons.org/licenses/by-nc-sa/4.0/
