@@ -27,9 +27,7 @@ The Assessment Model Markup Language (AMML) is an XML based model description la
   -   Essay
   -   Short Answer
 
----
-
-# Item Types
+# Objects
 
 -   RootType
 -   GroupType
