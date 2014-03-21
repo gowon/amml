@@ -27,7 +27,9 @@ The Assessment Model Markup Language (AMML) is an XML based model description la
   -   Essay
   -   Short Answer
 
-# Objects
+---
+
+# Item Types
 
 -   RootType
 -   GroupType
@@ -37,37 +39,54 @@ The Assessment Model Markup Language (AMML) is an XML based model description la
 
 # Vocabulary
 
-AMML contains a very spartan set of markup instructions (or tags) to encapsulate assessment data and metadata. The tags and attributes themselves are verbose and designed to be semantically self-defining.
+AMML contains a very spartan set of markup instructions (or elements) to encapsulate assessment data and metadata. The tags and attributes themselves are verbose and designed to be semantically self-defining.
 
 ## Global Attributes
 
 -   `class`
 -   `id`
--   `subject`
 -   `lang`
--   `name/title`
+-   `name`
+-   `title`
 
-## The Document Tag
-`<Document>` - Every valid AMML document must be contained in these tags. A document is a collection of assessments and block groups.
+## The Document Element
+`<Document>` - Every valid AMML document must be contained in these tags. A document is a collection of assessments and groups, and can optionally contain metadata to describe the doctument.
 
-## Blocks
+## Meta Elements
+`<Meta />` elements can be used to describe the document. Each Meta element represens a single piece of information. There is no bound to how many Meta elements can be used in a document.
 
-An assessment block represents a single prompt. Each of the different tags represent different types of prompt. Each prompt has it’s own pattern to describe it, as well as metadata to modify it.
+### Meta Attributes
+- `name`
+- `content`
 
+### Examples
+```
+<Meta name="author" content="Gowon Patterson" />
+<Meta name="last-updated" content="[RFC 2822 format date]" />
+```
+
+## Block Elements
+
+An block element represents a single prompt. Each of the different elements represent an explicit type of prompt. Each prompt has it’s own pattern to describe it, as well as metadata to modify it. All of the elements are based off the `<Generic>` block element, which can be used in lieu of an explicit type.
+
+### Generic Block Attributes
+- [Global attributes](#)
+- `subject`
+
+### Semantic Block Elements
 -   `<MultipleChoice>`
 -   `<MultipleCorrect>`
--   `<Equation>`
+-   `<Equation>` (use with LaTeX)
 -   `<TrueFalse>`
   -   `truelabel` - Defines the name of the “true” option.
   -   `falselabel` - Defines the name of the “false” option.
 -   `<Matching>`
 -   `<Ordering>`
 -   `<FillIn>` - Fill in the blank.
-  -   casesensitive: (true|false)
+  -   `casesensitive` (true|false)
 -   `<WriteIn>`
--   `<Generic>`
 
-## Details
+## Detail Elements
 -   `<Prompt>`
 -   `<Correct>`
 -   `<Choice>`
@@ -75,10 +94,10 @@ An assessment block represents a single prompt. Each of the different tags repre
 -   `<Explanation>`
 -   `<ScratchSpace />`
 
-## Assessment Template
+## Assessment Element
 `<Assessment>` represents an assessment template.
 
-## Groups
+## Group Element
 `<Group>` - Represents a group of assessment blocks.
 
 ## Referencing Blocks and Groups
