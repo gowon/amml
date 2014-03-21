@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Assessment>
+    <!--Topics: science, music, history, sports, humanities, movies-tv, trivia-->
+    <MultipleChoice subject="history" tags="politics,us" difficulty="1">
+      <Prompt>Who is the 47th Vice-President of the United States?</Prompt>
+      <Prompt>Who is Barack Obama's Vice-President?</Prompt>
+      <Correct>Joe Biden</Correct>
+      <Choice>Georga W. Bush</Choice>
+      <Choice>Dick Cheney</Choice>
+      <Choice>Al Gore</Choice>
+      <Choice>Ted Kaufman</Choice>
+      <Choice>Walter Mondale</Choice>
+      <Explanation />
+    </MultipleChoice>
+    <Equation subject="arithmetic" tags="addition" difficulty="1">
+      <ScratchSpace />
+      <Prompt>Solve 2 + 2</Prompt>
+      <Correct>4</Correct>
+      <Explanation />
+    </Equation>
+    <TrueFalse subject="trivia" tags="" difficulty="1" labels="true,false">
+      <Prompt>Clouds are made from marshmallows.</Prompt>
+      <Correct>false</Correct>
+      <Explanation>A cloud is a visible mass of liquid droplets or frozen crystals made of water or various chemicals suspended in the atmosphere.</Explanation>
+    </TrueFalse>
+    <MultipleCorrect topic="geometry" tags="politics,us" difficulty="1">
+      <Prompt>Squares are also what type of geometric shapes?</Prompt>
+      <Correct>Rectangles</Correct>
+      <Correct>Parallelograms</Correct>
+      <Correct>Polygons</Correct>
+      <Choice>Circles</Choice>
+      <Choice>Triangles</Choice>
+      <Choice>Pentograms</Choice>
+      <Explanation />
+    </MultipleCorrect>
+    <Matching subject="humanities" tags="color" difficulty="1">
+      <Prompt>Match the colors with their complementary color according to Chevreaux's Law.</Prompt>
+      <Choice id="a">Blue</Choice>
+      <Choice id="b">Red</Choice>
+      <Choice id="c">Yellow</Choice>
+      <Match id="a">Orange</Match>
+      <Match id="b">Green</Match>
+      <Match id="c">Purple</Match>
+      <Explanation />
+    </Matching>
+    <Ordering subject="humanities" tags="grammar" difficulty="1">
+      <Prompt>Put these words in alphabetical order:</Prompt>
+      <Choice id="1">Blue</Choice>
+      <Choice id="5">Red</Choice>
+      <Choice id="6">Yellow</Choice>
+      <Choice id="3">Orange</Choice>
+      <Choice id="2">Green</Choice>
+      <Choice id="4">Purple</Choice>
+      <Explanation />
+    </Ordering>
+    <FillIn subject="science" tags="astrology" difficulty="1">
+      <Prompt>{1} is known as the "Red Planet" because of the color of its surface.</Prompt>
+      <Correct id="1">Mars</Correct>
+      <Explanation />
+    </FillIn>
+    <WriteIn subject="trivia" tags="jokes" difficulty="2">
+      <Prompt>Why did the chicken cross the road?</Prompt>
+      <Correct>The chicken crossed the road to get to the other side.</Correct>
+      <Explanation>This is the traditional answer to this riddle. Although many alternate answers have been created, this is the answer that has been taught in class.</Explanation>
+    </WriteIn>
+  </Assessment>
+</Document>
