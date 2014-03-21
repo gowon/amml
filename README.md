@@ -14,7 +14,7 @@ The Assessment Model Markup Language (AMML) is an XML based model description la
 
 # The Model
 
-## Assessment Types
+## Types of assessments used in testing and polling
 
 -   True/False
 -   Multiple Choice
@@ -27,18 +27,15 @@ The Assessment Model Markup Language (AMML) is an XML based model description la
   -   Essay
   -   Short Answer
 
-# The Markup Language
+---
 
-# Grouping and Referencing
-
-All elements can be given IDs, which can be referenced using a ref attribute. \<group\> tag will allow elements to be grouped together for bulk classification.
-
-# Types
+# Item Types
 
 -   RootType
 -   GroupType
 -   ReferenceType
 -   BlockType
+-   DetailType
 
 # Vocabulary
 
@@ -52,18 +49,10 @@ AMML contains a very spartan set of markup instructions (or tags) to encapsulate
 -   `lang`
 -   `name/title`
 
-## Root Tag
+## The Document Tag
+`<Document>` - Every valid AMML document must be contained in these tags. A document is a collection of assessments and block groups.
 
--   `<Document>` - Every valid AMML document must be contained in these tags. A document is a collection of assessments and block groups.
-
-## Grouping &amp; Referencing Tags
-
--   `<Assessment>` - Represents an assessment template or an assessment implementation.
--   `<Group>` - Represents a group of assessment blocks.
--   `<Use />` - Is a reference to a block or group that has already been defined.
-  -   href
-
-## Block Tags
+## Blocks
 
 An assessment block represents a single prompt. Each of the different tags represent different types of prompt. Each prompt has it’s own pattern to describe it, as well as metadata to modify it.
 
@@ -71,23 +60,32 @@ An assessment block represents a single prompt. Each of the different tags repre
 -   `<MultipleCorrect>`
 -   `<Equation>`
 -   `<TrueFalse>`
-  -   truelabel - Defines the name of the “true” option.
-  -   falselabel - Defines the name of the “false” option.
+  -   `truelabel` - Defines the name of the “true” option.
+  -   `falselabel` - Defines the name of the “false” option.
 -   `<Matching>`
 -   `<Ordering>`
--   `<FillIn>` - Fill in the blank.
+-   `<FillIn>` - Fill in the blank.
   -   casesensitive: (true|false)
 -   `<WriteIn>`
 -   `<Generic>`
 
-## Descriptive Tags
-
+## Details
 -   `<Prompt>`
 -   `<Correct>`
 -   `<Choice>`
 -   `<Match>`
 -   `<Explanation>`
 -   `<ScratchSpace />`
+
+## Assessment Template
+`<Assessment>` represents an assessment template.
+
+## Groups
+`<Group>` - Represents a group of assessment blocks.
+
+## Referencing Blocks and Groups
+`<Use />` is a reference to a block or group that has already been defined.
+  -   `href`
 
 # Goals
 
@@ -96,7 +94,7 @@ An assessment block represents a single prompt. Each of the different tags repre
 2.  Create a set of tools to make it easier.
 3.  Create a public repository to facilitate goal \#1
 4.  Registration as an official Media Type with the IANA:
-    [http://www.iana.org/form/media-types](http://www.iana.org/form/media-types) 
+    [http://www.iana.org/form/media-types](http://www.iana.org/form/media-types)
 
 # Copyright and License
 
