@@ -19,9 +19,10 @@
       <Correct>4</Correct>
       <Explanation />
     </Equation>
-    <TrueFalse subject="trivia" tags="" difficulty="1" labels="true,false">
+    <TrueFalse subject="trivia" tags="" difficulty="1">
       <Prompt>Clouds are made from marshmallows.</Prompt>
-      <Correct>false</Correct>
+      <Choice>True</Choice>
+      <Correct>False</Correct>
       <Explanation>A cloud is a visible mass of liquid droplets or frozen crystals made of water or various chemicals suspended in the atmosphere.</Explanation>
     </TrueFalse>
     <MultipleCorrect topic="geometry" tags="politics,us" difficulty="1">
