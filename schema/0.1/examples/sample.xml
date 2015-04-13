@@ -37,27 +37,27 @@
     </MultipleCorrect>
     <Matching subject="humanities" tags="color" difficulty="1">
       <Prompt>Match the colors with their complementary color according to Chevreaux's Law.</Prompt>
-      <Choice id="a">Blue</Choice>
-      <Choice id="b">Red</Choice>
-      <Choice id="c">Yellow</Choice>
-      <Match id="a">Orange</Match>
-      <Match id="b">Green</Match>
-      <Match id="c">Purple</Match>
+      <Choice name="a">Blue</Choice>
+      <Choice name="b">Red</Choice>
+      <Choice name="c">Yellow</Choice>
+      <Match for="a">Orange</Match>
+      <Match for="b">Green</Match>
+      <Match for="c">Purple</Match>
       <Explanation />
     </Matching>
     <Ordering subject="humanities" tags="grammar" difficulty="1">
       <Prompt>Put these words in alphabetical order:</Prompt>
-      <Choice id="1">Blue</Choice>
-      <Choice id="5">Red</Choice>
-      <Choice id="6">Yellow</Choice>
-      <Choice id="3">Orange</Choice>
-      <Choice id="2">Green</Choice>
-      <Choice id="4">Purple</Choice>
+      <Choice name="1">Blue</Choice>
+      <Choice name="5">Red</Choice>
+      <Choice name="6">Yellow</Choice>
+      <Choice name="3">Orange</Choice>
+      <Choice name="2">Green</Choice>
+      <Choice name="4">Purple</Choice>
       <Explanation />
     </Ordering>
     <FillIn subject="science" tags="astrology" difficulty="1">
       <Prompt>{1} is known as the "Red Planet" because of the color of its surface.</Prompt>
-      <Correct id="1">Mars</Correct>
+      <Correct name="1">Mars</Correct>
       <Explanation />
     </FillIn>
     <WriteIn subject="trivia" tags="jokes" difficulty="2">
