@@ -101,7 +101,7 @@ An block element represents a single prompt. Each of the different elements repr
 `<Group>` - Represents a group of assessment blocks.
 
 ## Referencing Blocks and Groups
-`<Use />` is a reference to a block or group that has already been defined.
+`<Use />` is a reference to a block or group that has already been defined, by id.
   -   `href`
 
 # Goals
@@ -110,12 +110,12 @@ An block element represents a single prompt. Each of the different elements repr
     archiving, and distributing assessment items.
 2.  Create a set of tools to make it easier.
 3.  Create a public repository to facilitate goal \#1
-4.  Registration as an official Media Type with the IANA:
+4.  Register (*.amml; application/amml+xml) as an official Media Type with the IANA:
     [http://www.iana.org/form/media-types](http://www.iana.org/form/media-types)
 
 # Copyright and License
 
-Copyright &copy; 2014 Gowon Patterson, Gowon Designs Ltd. Co. 
+Copyright &copy; 2015 Gowon Patterson, Gowon Designs Ltd. Co. 
 
 AMML is licensed under the terms of the [GNU General Public License Version 3][gpl-license].
 
